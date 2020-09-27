@@ -18,7 +18,7 @@ async def _(event):
     else:
         s_help_string = ""
 
-  help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[TeleBot](https://xditya.gitbook.io/telebot/)**\n\n"""
+    help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[TeleBot](https://xditya.gitbook.io/telebot/)**\n\n"""
     borg._iiqsixfourstore[str(event.chat_id)] = {}
     borg._iiqsixfourstore[
         str(event.chat_id)
