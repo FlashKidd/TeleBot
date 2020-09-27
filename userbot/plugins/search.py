@@ -27,7 +27,7 @@ from userbot.utils import admin_cmd
 
 @telebot.on(admin_cmd(outgoing=True, pattern=r"go (.*)"))
 async def gsearch(q_event):
-    """ For .google command, do a Google search from @TeleBotHelp. """
+    """ For .google command, do a Google search from @TheFlashxD. """
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:
