@@ -32,10 +32,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             "Source Code",
             text="**Welcome to TeleBot**\n\n`Click below buttons for more`",
             buttons=[
-                    [custom.Button.url("Creator🧑", "https://t.me/its_xditya")],
-                    [custom.Button.url("👨‍💻Source Code‍💻", "https://github.com/xditya/TeleBot"), custom.Button.url(
-                        "Deploy 🌀", "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")],
-                    [custom.Button.url("Updates and Support Group↗️", "https://t.me/TeleBotSupport")]
+                    [custom.Button.url("Creator🧑", "https://t.me/TheFlashxD")],
+                    [custom.Button.url("👨‍💻Source Code‍💻", "https://github.com/flashkidd/TeleBot"), custom.Button.url(
+                        "Deploy 🌀", "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2flashkidd%2FTeleBot")],
+                    [custom.Button.url("Updates and Support Group↗️", "https://t.me/Flash_Kidd")]
                 ],
                 link_preview=False
             )
@@ -52,7 +52,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Please get your own Userbot from @TeleBotHelp , and don't use mine!"
+            reply_pop_up_alert = "Please get your own Userbot from @Flash_Kidd , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
@@ -60,7 +60,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await event.edit("Help Menu Closed.")
         else:
-            reply_pop_up_alert = "Please get your own userbot from @TeleBotSupport "
+            reply_pop_up_alert = "Please get your own userbot from @Flash_kidd "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
