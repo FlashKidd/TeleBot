@@ -76,7 +76,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        shite = await borg.send_message(event.chat_id, "__Back alive!__\n**No Longer afk.**\n `Was afk for:``" + total_afk_time + "`")
+        shite = await borg.send_message(event.chat_id, "__Back Online!__\n**No Longer afk.**\n `Was afk for:``" + total_afk_time + "`")
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
@@ -148,8 +148,8 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**My Master Is Offline!!** \n**Since:-** `{total_afk_time}`" + \
-            f"\n\n**Please do not tag me again and again...** `:/ `\n**REASON**: `{reason}`" \
+        message_to_reply = f"**My Senpai Is Offline!!** \n**Since:-** `{total_afk_time}`" + \
+            f"\n\n**Tag Him And Stand A Chance Of Being Blocked By Me😌** `:/ `\n**Reason For Being AFK**: `{reason}`" \
             if reason \
             else f"**{AFKSTR}**.\n\n**AFK Since** {total_afk_time} "
         msg = await event.reply(message_to_reply)
