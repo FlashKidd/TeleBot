@@ -1,9 +1,9 @@
-# TeleBot - Telegram UserBot
+# Flashkidd - Telegram UserBot
 
 <p align="left">
-    <a href="https://t.me/TeleBotHelpChat"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="Support" /></a>
-    <a href="https://github.com/xditya/TeleBot/stargazers"><img src="https://img.shields.io/github/stars/xditya/TeleBot?style=social"></a>
-    <a href="https://github.com/xditya/TeleBot"><img src="https://img.shields.io/github/last-commit/xditya/TeleBot?style=flat-square"></a>
+    <a href="https://t.me/Flash_kidd"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="Support" /></a>
+    <a href="https://github.com/flashkidd/TeleBot/stargazers"><img src="https://img.shields.io/github/stars/xditya/TeleBot?style=social"></a>
+    <a href="https://github.com/flashkidd/TeleBot"><img src="https://img.shields.io/github/last-commit/xditya/TeleBot?style=flat-square"></a>
 </p>
     
 ## Video Tutorial on deploying
@@ -18,10 +18,10 @@ Click the below button to watch the video tutorial on deploying
     
 ## The Easier Way to install
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xditya/TeleBot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/flashkidd/TeleBot)
 
 ## Support
-Join [TeleBot Support group](https://t.me/TeleBotSupport) for updates and new plugin suggestions.
+Join [TeleBot Support group](https://t.me/flash_kidd) for updates and new plugin suggestions.
 Do fork and star the repo 
 
 ### Session String 
@@ -31,7 +31,7 @@ Do fork and star the repo
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/xditya/TeleBot
+git clone https://github.com/flashkidd/TeleBot
 cd TeleBot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
