@@ -58,7 +58,7 @@ async def you_dm_niqq(event):
         if not pmpermit_sql.is_approved(chat.id):
             if not chat.id in PM_WARNS:
                 pmpermit_sql.approve(chat.id, "outgoing")
-                bruh = "__Auto-approved coz outgoing 🚶‍♂️__"
+                bruh = "__You Are Allowed To Inbox Me🚶‍♂️__"
                 rko = await borg.send_message(event.chat_id, bruh)
                 await asyncio.sleep(3)
                 await rko.delete()
