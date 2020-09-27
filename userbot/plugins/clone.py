@@ -73,7 +73,7 @@ async def _(event):
       reply_to=reply_message
       )
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, f"#CLONED\nSuccesfulley cloned [{first_name}](tg://user?id={user_id })")
+        await event.client.send_message(BOTLOG_CHATID, f"I AM YOU, YOU ARE ME😎 [{first_name}](tg://user?id={user_id })")
     
 @borg.on(admin_cmd(pattern="revert$"))
 async def _(event):
