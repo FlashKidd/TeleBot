@@ -1,8 +1,8 @@
 """
-TeSt
+
   Syntax: .yo
-by
-  @TheFlashxD
+
+  By: @TheFlashxD
 
 """
 from telethon import events
@@ -25,7 +25,7 @@ async def _(event):
 
         return
 
-    await event.edit(" let me Throw You A Punchline... 馃槈")
+    await event.edit(" let me Throw You A Punchline... ðŸ˜‰")
 
     await asyncio.sleep(2)
 
@@ -69,11 +69,10 @@ async def _(event):
 
     if x==10:
 
-        await event.edit("`\"Yo momma so ugly I took her to the zoo, guy at the door said "Thanks for bringing her back.\"`")
+        await event.edit("`\"Yo momma so ugly I took her to the zoo, guy at the door said Thanks for bringing her back.\"`")
 
     if x==11:
 
         await event.edit("`\"Yo mama soooooo dark i clicked on her profile pic and thought my phone died!!!\"`")
 
     
-
