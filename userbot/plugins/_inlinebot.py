@@ -17,15 +17,22 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query.startswith("`Userbot"):
-            rev_text = query[::-1]
-            buttons = paginate_help(0, CMD_LIST, "helpme")
+        if event.sender_id == borg.uid and query.startswith("`Userbot"):
+            try:
+                _, ko, pno = query.split(" ")
+                actual_text = borg._iiqsixfourstore[ko][pno]
+                del borg._iiqsixfourstore[ko]
+            except IndexError:
+                actual_text = query
+            buttons = paginate_help(0, borg._plugins, "helpme")
             result = builder.article(
-                "© TeleBot Help",
+                "© TeleBot",
                 text="{}\nCurrently Loaded Plugins: {}".format(
-                    query, len(CMD_LIST)),
+                    actual_text, len(borg._plugins)
+                ),
                 buttons=buttons,
-                link_preview=False
+                link_preview=False,
+                parse_mode="html"
             )
         else:
             result = builder.article(
