@@ -17,7 +17,6 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = ""
-    _, check_sgnirts = check_data_base_heal_th()
 
   help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[TeleBot](https://xditya.gitbook.io/telebot/)**\n\n"""
     borg._iiqsixfourstore[str(event.chat_id)] = {}
