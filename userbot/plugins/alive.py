@@ -45,7 +45,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TeleBotSupport"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@FlashKidd_Freenet"
 
 @telebot.on(admin_cmd(outgoing=True, pattern="alive"))
 @telebot.on(sudo_cmd(outgoing=True, pattern="alive", allow_sudo=True))
@@ -57,16 +57,16 @@ async def amireallyalive(alive):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        tele = f"**Welcome To TeleBot **\n\n"
-        tele += "`Hey! I'm alive. All systems online and functioning normally!`\n\n"
-        tele += "` 🔸 Telethon version:` **1.16.4**\n` 🔹 Python:` **3.8.3**\n"
-        tele += f"` 🔸 TeleBot Version:` **{telever}**\n"
-        tele += "` 🔹 More Info:` **@TeleBotSupport**\n"
-        tele += f"` 🔸 Sudo :` **{sudo}**\n"
-        tele += f"` 🔹 TeleBot Uptime:` **{uptime}**\n"
-        tele += "` 🔸 Database Status:` **All OK 👌!**\n"
-        tele += f"` 🔹 My pro owner` : **[{DEFAULTUSER}](tg://user?id={myid})**\n\n"
-        tele += "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)"
+        tele = f"`Welcome To FlashBot `\n\n"
+        tele += "**Hey, How May I Brighten Up Your Day🙂!**\n\n"
+        tele += "** ➥ Telethon version:** `1.16.4`\n** ➥ Python:** `3.8.3`\n"
+        tele += f"** ➥ TeleBot Version:** `{telever}`\n"
+        tele += "** ➥ More Info:** @FlashKidd_Freenet\n"
+        tele += f"** ➥ Sudo :** `{sudo}`\n"
+        tele += f"** ➥ TeleBot Uptime:** `{uptime}`\n"
+        tele += "** ➥ Database Status:** `All OK 👌!`\n"
+        tele += f"** ➥ My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+        tele += "    [✨ My Repo ✨](https://github.com/Flashkidd/TeleBot)"
 
         chat = await alive.get_chat()
         await alive.delete()
@@ -74,7 +74,7 @@ async def amireallyalive(alive):
         await borg.send_file(alive.chat_id, ALV_PIC,caption=tele, link_preview = False)
         await alive.delete()
         return
-    req = requests.get("https://telegra.ph/file/0670190de8e3bddea6d95.png")
+    req = requests.get("https://telegra.ph/file/376570f9018be9ace09df.jpg")
     req.raise_for_status()
     file = BytesIO(req.content)
     file.seek(0)
@@ -83,15 +83,15 @@ async def amireallyalive(alive):
         img.save(sticker, "webp")
         sticker.name = "sticker.webp"
         sticker.seek(0)
-        await borg.send_message(alive.chat_id, f"**Welcome To TeleBot **\n\n"
-                "`Hey! I'm alive. All systems online and functioning normally!`\n\n"
-                "` 🔸 Telethon version:` **1.16.4**\n` 🔹 Python:` **3.8.3**\n"
-                f"` 🔸 TeleBot Version:` **{telever}**\n"
-                "` 🔹 More Info:` **@TeleBotSupport**\n"
-                f"` 🔸 Sudo :` **{sudo}**\n"
-                f"` 🔹 TeleBot Uptime:` **{uptime}**\n"
-                "` 🔸 Database Status:` **All OK 👌!**\n"
-                f"` 🔹 My pro owner` : **[{DEFAULTUSER}](tg://user?id={myid})**\n\n"
-                "    [✨ GitHub Repository ✨](https://github.com/xditya/TeleBot)", link_preview = False)
+        await borg.send_message(alive.chat_id, f"`Welcome To FlashBot `\n\n"
+                "**Hey, How May I Brighten Up Your Day🙂!**\n\n"
+                "** ➥ Telethon version:** `1.16.4`\n** ➥ Python:** `3.8.3`\n"
+                f"** ➥ TeleBot Version:** `{telever}`\n"
+                "** ➥ More Info:** @FlashKidd_Freenet\n"
+                f"** ➥ Sudo :** `{sudo}`\n"
+                f"** ➥ TeleBot Uptime:** `{uptime}`\n"
+                "** ➥ Database Status:** `All OK 👌!`\n"
+                f"** ➥ My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+                "    [✨ My Repo ✨](https://github.com/Flashkidd/TeleBot)", link_preview = False)
         await borg.send_file(alive.chat_id, file=sticker) 
         await alive.delete()
