@@ -32,19 +32,19 @@ if Var.PMSECURITY.lower() == "off":
 else:
  pm = "Enabled"
  
-TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TeleBotSupport"
+TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TheFlashxD"
 @telebot.on(admin_cmd(outgoing=True, pattern="stats"))
 @telebot.on(sudo_cmd(outgoing=True, pattern="stats", allow_sudo=True))
 async def telestats(stats):
  myid = bot.uid
- tele = f"**TeleBot Stats for [{TELEUSER}](tg://user?id={myid})**\n\n"
+ tele = f"**F-Bot Stats for [{TELEUSER}](tg://user?id={myid})**\n\n"
  tele +=f"**TeleBot Version**: {telever}\n"
  tele +=f"**Log Group**: {log}\n"
  tele +=f"**Assistant Bot**: {bots}\n"
  tele +=f"**Lydia**: {lyd}\n"
  tele +=f"**Sudo**: {sudo}\n"
  tele +=f"**PMSecurity**: {pm}\n"
- tele +=f"\nVisit @TeleBotSupport\nfor assistance.\n"
+ tele +=f"\n PM @TheFlashxD\nfor assistance.\n"
  chat = await stats.get_chat()
  await borg.send_message(stats.chat_id, tele)
  await stats.delete()
