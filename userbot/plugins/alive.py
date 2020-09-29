@@ -57,8 +57,8 @@ async def amireallyalive(alive):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        tele = f"`Welcome To FlashBot `\n\n"
-        tele += "**Hey, How May I Brighten Up Your Day🙂!**\n\n"
+        tele = f"`   Welcome To 『♡𝐅-𝐆𝐀𝐍𝐆♡』Bot   `\n\n"
+        tele += "**>>>>>STATS<<<<<**\n\n"
         tele += "** ➥ Telethon version:** `1.16.4`\n** ➥ Python:** `3.8.3`\n"
         tele += f"** ➥ TeleBot Version:** `{telever}`\n"
         tele += "** ➥ More Info:** @FlashKidd_Freenet\n"
@@ -83,8 +83,8 @@ async def amireallyalive(alive):
         img.save(sticker, "webp")
         sticker.name = "sticker.webp"
         sticker.seek(0)
-        await borg.send_message(alive.chat_id, f"`Welcome To FlashBot `\n\n"
-                "**Hey, How May I Brighten Up Your Day🙂!**\n\n"
+        await borg.send_message(alive.chat_id, f"`   Welcome To 『♡𝐅-𝐆𝐀𝐍𝐆♡』Bot `\n\n"
+                "**>>>>>STATS<<<<<**\n\n"
                 "** ➥ Telethon version:** `1.16.4`\n** ➥ Python:** `3.8.3`\n"
                 f"** ➥ TeleBot Version:** `{telever}`\n"
                 "** ➥ More Info:** @FlashKidd_Freenet\n"
