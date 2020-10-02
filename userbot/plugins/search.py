@@ -1,7 +1,7 @@
 """
 UserBot Module to search the internet
-All-in-one by @flashkidd
-(c)TeleBot
+All-in-one by @TheFlashxD
+(c)TheFlashxD
 
 Available commands:
 .ggl - howtogoogle
@@ -27,7 +27,7 @@ from userbot.utils import admin_cmd
 
 @telebot.on(admin_cmd(outgoing=True, pattern=r"gs (.*)"))
 async def gsearch(q_event):
-    """ For .google command, do a Google search from @#TheFlashxD. """
+    """ For .google command, do a Google search from @TheFlashxD. """
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:
