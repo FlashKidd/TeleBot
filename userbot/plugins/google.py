@@ -1,5 +1,5 @@
 """ Powered by @Google
-Available Commands:
+Availablez Commands:
 .google search <query>
 .google image <query>
 .google reverse search"""
